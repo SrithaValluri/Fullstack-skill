@@ -1,0 +1,31 @@
+ <hibernate-configuration>
+  <session-factory>
+    <!-- db properties -->
+    <property name="hibernate.connection.driver_class">
+      com.mysql.cj.jdbc.Driver
+    </property>
+    <property name="hibernate.connection.url">
+      jdbc:mysql://localhost:3306/skill_exp
+    </property>
+    <property name="hibernate.connection.username">
+      root
+    </property>
+    <property name="hibernate.connection.password">
+      Sritha_1234
+    </property>
+    
+    <!-- hibernate properties -->
+    <property name="hibernate.dialect">
+      org.hibernate.dialect.MySQL8Dialect
+    </property>
+    <property name="hibernate.show_sql">
+      true
+    </property>
+    <property name="hibernate.hbm2ddl.auto">
+      create
+    </property>
+    
+    <!-- mapping entity classes -->
+    <mapping class="com.klu.entity.Product" />
+  </session-factory>
+</hibernate-configuration>
